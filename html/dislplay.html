@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Property Demo</title>
+  <style>
+    .section {
+      margin: 20px 0;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .box {
+      padding: 10px;
+      margin: 5px;
+      background-color: #d1e7dd;
+      border: 1px solid #0f5132;
+      text-align: center;
+    }
+
+    .inline .box {
+      display: inline;
+      background-color: #e7f1ff;
+    }
+
+    .inline-block .box {
+      display: inline-block;
+      background-color: #fff3cd;
+    }
+
+    .none .box {
+      display: none;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: #f8d7da;
+      padding: 10px;
+    }
+
+    .inline-flex {
+      display: inline-flex;
+      gap: 10px;
+      background-color: #dbeafe;
+      padding: 10px;
+    }
+
+    .inline-grid {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: #fae3d9;
+      padding: 10px;
+    }
+
+    .table {
+      display: table;
+      border-collapse: collapse;
+    }
+
+    .table .box {
+      display: table-cell;
+      border: 1px solid black;
+      background-color: #cfe2ff;
+    }
+
+    .contents {
+      display: contents;
+      padding: 10px;
+      background-color: #fefefe;
+      border: 2px dashed red;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section block">
+    <span class="label">display: block</span>
+    <div class="box">Block 1</div>
+    <div class="box">Block 2</div>
+  </div>
+
+  <div class="section inline">
+    <span class="label">display: inline</span>
+    <div class="box">Inline 1</div>
+    <div class="box">Inline 2</div>
+  </div>
+
+  <div class="section inline-block">
+    <span class="label">display: inline-block</span>
+    <div class="box">Inline-block 1</div>
+    <div class="box">Inline-block 2</div>
+  </div>
+
+  <div class="section flex">
+    <span class="label">display: flex</span>
+    <div class="box">Flex 1</div>
+    <div class="box">Flex 2</div>
+  </div> M
+
+  <div class="section inline-flex">
+    <span class="label">display: inline-flex</span>
+    <div class="box">Inline-flex 1</div>
+    <div class="box">Inline-flex 2</div>
+  </div>
+
+  <div class="section grid">
+    <span class="label">display: grid</span>
+    <div class="box">Grid 1</div>
+    <div class="box">Grid 2</div>
+    <div class="box">Grid 3</div>
+  </div>
+
+  <div class="section inline-grid">
+    <span class="label">display: inline-grid</span>
+    <div class="box">Inline-grid 1</div>
+    <div class="box">Inline-grid 2</div>

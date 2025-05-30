@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>em vs rem Demo</title>
+  <style>
+    html {
+      font-size: 16px; /* Base size for rem */
+    }
+
+    .parent {
+      font-size: 20px;
+      border: 2px solid #000;
+      margin: 20% 40% 80% 10%;
+      padding: 1em; /* 1em = 20px here */
+    }
+
+    .child-em {
+      font-size: 1em;
+      padding: 2em; /* 2em = 2 × 20px = 40px */
+      background-color: #ffe0e0;
+      margin-bottom: 10px;
+    }
+
+    .child-rem {
+      font-size: 1rem;
+      padding: 2rem; /* 2rem = 2 × 16px = 32px */
+      background-color: #e0f7ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child-em">
+      Padding using <strong>em</strong>
+    </div>
+    <div class="child-rem">
+      Padding using <strong>rem</strong>
+    </div>
+  </div>
+
+</body>
+</html>
